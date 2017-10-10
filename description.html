@@ -1,0 +1,55 @@
+<!doctype HTML5>
+<html>
+  <head lang="en">
+    <meta charset="utf-8">
+    <title>Movie Description</title> 
+    <link href='https://fonts.googleapis.com/css?family=Roboto:400,500,700' rel='stylesheet' type='text/css'>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
+    <link href="css/description.css" rel="stylesheet">
+     <script src="http://code.jquery.com/jquery-1.12.0.min.js"></script>
+    <script src="js/description.js"></script>
+        
+  </head>  
+  <body>
+    <div class="main-header">
+      <div class="inner">
+        <h1 class="main-title">MovieSearch</h1>
+        <form class="search-form">
+          <label class="is-hidden" for="search">Search a title</label>
+          <input type="search" name="search" id="search" placeholder="Search a Title...">
+        
+          <!-- ==============================================================
+               Comment out <label> and <input> below to filter search by year
+               ============================================================== -->
+        
+        
+        <!--
+                <label class="is-hidden" for="year">Any Year</label>
+                <input type="text" maxlength="4" name="year" id="year" placeholder="Year"> 
+        -->
+         
+        
+          <button type="submit" id="submit" class="search-button"><i class="material-icons icn-search">search</i></button>
+        </form>   
+      </div>   
+    </div>
+    <div class="main-content clearfix">
+      <div class="left-column">
+        <a href="" title="home page" class="return-a">
+          <i class="material-icons">keyboard_arrow_left</i> Search results
+        </a>
+        <img class="poster">                  
+      </div>
+      <div class="right-column">
+        <h1 class="title-year"></h1>
+        <span class="rating"></span>
+        <h3 class="plot-header">Plot Synopsis:</h3>
+        <p class="plot"></p>
+        <a href="" class="site-link" target="_blank" >View on IMBD</a>         
+      </div>                     
+    </div>
+      
+  </body>
+
+</html>
